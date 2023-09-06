@@ -1,0 +1,7 @@
+{
+  "name": "setd",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

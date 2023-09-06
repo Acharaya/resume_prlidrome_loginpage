@@ -1,0 +1,57 @@
+<ion-app>
+  <ion-header >
+    <ion-toolbar color="secondary">
+      <ion-title>
+        RESUME
+      </ion-title>
+    </ion-toolbar>   
+  </ion-header>
+  <ion-content >
+    <ion-grid>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="auto">
+          <div>
+            <ion-avatar>
+              <img src="\assets\ar.jpg">
+            </ion-avatar>
+          </div>
+       </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-item>
+      <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+      <ion-label>NAME:</ion-label>
+      <ion-label *ngFor="let items of data">{{items.name}}</ion-label> 
+    </ion-item>
+    <ion-item>
+      <ion-icon name="call-outline" slot="start"></ion-icon>
+      <ion-label>PHONE-NO:</ion-label>
+      <ion-label *ngFor="let items of data">{{items.phone}}</ion-label> 
+    </ion-item>
+    <ion-item>
+      <ion-icon name="mail-outline" slot="start"></ion-icon>
+      <ion-label>EMAIL-ID:</ion-label>
+      <ion-label *ngFor="let items of data">{{items.email}}</ion-label>
+    </ion-item>
+   <ion-item>
+      <ion-icon name="map-outline" slot="start"></ion-icon>
+      <ion-label>ADDRESS:</ion-label>
+      <ion-label *ngFor="let items of data">{{items.address}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="book-outline" slot="start"></ion-icon>
+      <ion-label>QUALIFICATION:</ion-label>
+      <ion-label *ngFor="let items of data">{{items.qualification}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="american-football-outline" slot="start"></ion-icon>
+      <ion-label>HOBBIES:</ion-label>
+      <ion-label *ngFor="let items of data">{{items.hobbies}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="analytics-outline" slot="start"></ion-icon>
+      <ion-label>SKILLS:</ion-label>
+      <ion-label *ngFor="let items of data">{{items.skills}}</ion-label>
+    </ion-item>
+  </ion-content>
+</ion-app>

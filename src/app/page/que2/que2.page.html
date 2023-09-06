@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Palindrome
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="Tertiary">
+  <h4 *ngFor="let item of temporary">{{item.output}}</h4>
+  
+  <ion-item>
+    <ion-label>Enter the value : </ion-label><ion-input [(ngModel)]="value"></ion-input>
+  </ion-item>
+  <ion-button color="secondary" (click)="submit()">submit</ion-button>
+</ion-content>
+

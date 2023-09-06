@@ -1,0 +1,38 @@
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+      <ion-card-title class="ion-text-center space">WELCOME</ion-card-title>  
+  <ion-item>
+    <ion-label></ion-label>
+    <ion-label>
+      EMALI-ID:
+    </ion-label>
+    <ion-input type="text" [(ngModel)]="Email">
+    </ion-input>
+  </ion-item>
+<ion-item>
+    <ion-label></ion-label>
+    <ion-label>
+      Password:
+    </ion-label>
+    <ion-input type="text" [(ngModel)]="password">
+    </ion-input>
+  </ion-item>
+     <ion-grid>
+        <ion-row>
+          <ion-col><div class="ion-text-center"> <ion-button (click)="Login()">LOGIN</ion-button>    </div> </ion-col> </ion-row>
+      <ion-row class="ion-justify-content-center-sm  ion-justify-content-around" >
+         <ion-col size="1"><div class="space " ><ion-icon size="large" name="logo-facebook"></ion-icon> </div></ion-col>
+        <ion-col size="1"><div class="space "><ion-icon size="large" name="logo-twitter"></ion-icon></div></ion-col>
+        <ion-col size="1"><div class="space "><ion-icon size="large" name="logo-instagram"></ion-icon> </div></ion-col>
+        <ion-col size="1"><div class="space "><ion-icon size="large" name="logo-youtube"></ion-icon></div></ion-col>
+      </ion-row>
+    </ion-grid>
+    </ion-card>   
+</ion-content>
+
